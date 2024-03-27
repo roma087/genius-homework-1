@@ -1,13 +1,72 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'); 
+}
+
 :root {
     --color-primary-light:#FFFFFF;
     --color-primery-dark:#011C44;
     --color-brand: #2B7FFF;
     --color-brand-dark: #000000;
+    --color-additional: #747272;
 }
 
 /* Base */
 body {
     color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+address {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 ul {
@@ -17,11 +76,12 @@ ul {
 /* Button */
 .button-primary {
     color: var(--color-primary-light);
+    font-weight: 600;
     background-color: var(--color-brand);
     border: 2px solid var(--color-brand);
     border-radius: 32px;
     cursor: pointer;
-}
+    }
 
 .button-primary:hover {
     color: var(--color-brand);
@@ -29,26 +89,111 @@ ul {
 }
 
 /* Link */
-.link {
+.header-link {
     color: var(--color-primery-dark);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
-.link:hover {
+.header-link:hover {
     color: var(--color-brand);
+    font-weight: 700;
+}
+
+.footer-link {
+    color: var(--color-primary-light);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--color-brand);
+    text-decoration: underline;
 }
 
 /* Hero section */
 .hero-title {
     color: var(--color-brand);
+   font-family: 'Play', sans-serif;
+   text-align: left;
+   text-transform: capitalize;
+   font-size: 140px;
+   font-weight: 700;
+   }
+
+   .hero-section h2 {
+    font-size: 18px;
+    font-weight: 400;
+   }
+
+   .hero-section .button-primary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+   }
+
+   .hero-section .hero-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    }
+
+    /* Section title */
+   .section-title {
+    font-family: Play, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+   }
+
+    .section-title .accent {
+    color: var(--color-brand);
+   }
+
+/* Aboutus section */
+.section-title .capitalize {
+    color: var(--color-brand);
+    text-transform: capitalize;
+} 
+
+.aboutus-text {
+    font-size: 22px;
+    line-height: 1.7;
 }
 
-/* Advanced section */
-.advantages-list {
-    
-    background-color: var(--color-primary-light);
+.aboutus-text .accent {
+       text-transform: capitalize;
+       font-weight:600;
 }
 
-.section-title .accent {
+/* Whyus section */
+.advantages-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* Procedures section */
+.procedures-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Footer  */
+.address-link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.address-link:hover {
     color: var(--color-brand);
 }
+
+.address-copyright {
+    color: var(--color-additional);
+    font-size: 13px;
+   }
 
